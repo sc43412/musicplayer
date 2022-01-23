@@ -1,0 +1,671 @@
+/* /* global-----------------------------------------------*/
+    
+body{
+	height: 100%;
+	width: 100%;
+	margin-left: -5px;
+	margin-top: -1vh;
+	background-image: url('image/background.png');
+	background-size: cover;
+
+
+}
+      main{
+	height: 150%;
+	width:65%;
+	margin-top: 10vh;
+	margin-left: 4%;
+	margin-right: 3%;
+	padding-bottom: 20vh;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column;
+}
+       aside{
+	height:auto;
+	width:28%;
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 0px;
+	margin-top: 8%;
+	margin-left: -1vw;
+	vertical-align: top; 
+}
+/*  navbar-----------------------------------------------*/
+nav{
+	height: 4rem;
+	width:100%;
+	margin: 0.3rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 1; 
+}
+#music-player-tag{
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#music-player-logo{
+	display: inline;
+}
+#music-player-logo img{
+	height: 3.3rem;
+	width: 3.3rem;
+	border-radius: 50%;
+	display: inline;
+}
+#music-player-name{
+	color: white;
+	font-family: helvetica, sans-serif;
+	padding: 5px;
+	margin-top: 7px;
+	display: inline;
+}
+#search-bar-utility{
+	width: auto;
+	display: flex;
+	margin-right: 2rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: whitesmoke;
+}
+#search-bar input[type="text"]{
+	height:1.7rem;
+	width:17vw;
+	margin-right: 3px;
+	padding: 1px;
+	background-color: whitesmoke;
+	border:none;
+	font-family: helvetica, sans-serif;
+}
+::placeholder{
+	font-family: helvetica, sans-serif;
+	padding: 5px;
+}
+#search-bar input:focus{
+	height:1.7rem;
+	width:17vw;
+	outline:none;
+}
+#search-bar i{
+	margin-top: 1px;
+}
+#notifications{
+	font-size: 1.3rem;
+	margin-top: 18px;
+	margin-right: 2rem;
+
+}
+#user{
+	margin-top: 5px;
+}
+#user img{
+	height: 3.3rem;
+	width: 3.3rem;
+	border-radius: 50%;
+}
+/*----slide section-----------------------------------------------------------------*/
+#slide-section{
+	width: 86%;
+	height: 50vh;
+	overflow: hidden;
+	background-color: blue;
+	margin-left: 1.5rem;
+} 
+@media only screen and (max-width: 600px) {
+  #slide-section{
+  	height: 25vh;
+  }
+}
+#slide-section figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 15s slider infinite;
+	border-radius: 90%;
+
+}
+#slide-section figure div{
+	width: 20%;
+
+	float: left;
+}
+#slide-section figure div img{
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes slider {
+	0%{
+		left: 0%;
+	}
+	20%{
+		left: 0%;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left:-300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+/* Latesr Release................................................................................*/
+#latest-release{
+	height: auto;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 22px;
+
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.container div{
+	width: 200px;
+	height: 130px;
+	display: flex;
+	justify-content: space-between;
+}
+.second{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.third{
+	display: flex;
+	flex-direction: column;
+	
+	align-items: flex-end;
+}
+.second h2,
+.third h2{
+	font-family: cursive;
+	font-size: 1rem;
+	margin-top: 5px;
+	padding: 2px 3px 4px 5px;
+	color: #f2f0e9;
+	letter-spacing: 2px;
+}
+/*popular artist---------------------------------------------------*/
+#popular-artist{
+	width: 70%;
+	height: 20vh;
+	display: flex;
+	justify-content: space-between;
+	
+}
+#popular-artist div{
+	width: 20%;
+	height: 100%;
+	margin-right: 0.5rem;
+	
+}
+#popular-artist div a{
+	width: 100%;
+	height: 100%;
+}
+#popular-artist div a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#popular-artist div p{
+	margin-left: 2.3rem;
+	color: whitesmoke;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: cursive;
+	margin-bottom: 2px;
+}
+#popular-artist div :hover{
+  border-radius: 50%;
+  border-radius: 0px;
+
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+    
+
+    
+
+
+/* radio stations -----------------------------------*/
+#playlist{
+	width:70%;
+	height:20vh;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	text-align: center;
+	border-radius: 5px;
+
+}
+#playlist-item-1{
+	background-image: url('image/love-music.jpg');
+	background-size: cover;
+	background-position: center;
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+#playlist-item-1:hover{
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+#playlist-item-2{
+	background-image: url(image/retro-music.png);
+	background-size: cover;
+	background-position: center;
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+#playlist-item-2:hover{
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+
+#playlist-item-3{
+	background-image: url(image/chill-music.jpg);
+	background-size: cover;
+	background-position: center;
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+#playlist-item-3:hover{
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+#playlist-item-4{
+	background-image: url(image/pop.jpg);
+	background-size: cover;
+	background-position: center;
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+#playlist-item-4:hover{
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+#playlist-item-5{
+	background-image: url(image/workout-music.jpg);
+	background-size: cover;
+	background-position: center;
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+#playlist-item-5:hover{
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+#playlist-item-6{
+	background-image: url(image/rock.jpg);
+	background-size: cover;
+	background-position: center;
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+}
+#playlist-item-6:hover{
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+}
+/*Genre Section*/
+#genre{
+	padding-top: 100px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	margin-bottom: -5%;
+}
+#genre-item{
+	height: auto;
+	width: auto;
+	margin-top: -5%;
+	padding: 0px;
+	transition: transform 0.7s ease-in-out;
+}
+#genre-item-background-1{
+	height: 150px;
+	width: 250px;
+	background-image: url(image/party-music.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 01;
+	padding: 0px;
+	color: whitesmoke;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	line-height: 8rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#genre-item:hover{
+	transform: scale(0.9);
+}
+#genre-item-background-2{
+	height: 150px;
+	width: 250px;
+	background-image: url(image/electronics-music.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin-left: -10px;
+	color: whitesmoke;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	line-height: 8rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#genre-item-background-3{
+	height: 150px;
+	width: 250px;
+	background-image: url(image/road-trip.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin-left: -20px;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 8rem;
+	margin-bottom: 2rem;
+	color: whitesmoke;
+}
+#genre-item-text{
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 2%;
+	font-size: 1.3rem;
+	padding-top: 30px;
+	opacity: 1;
+	font-weight: 600;
+}
+	
+	/*latest hindi and latest english-----------------------*/
+	#latest-english,
+	#latest-hindi{
+		width: 100%;
+		height: 34vh;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 32px;
+		margin-right: 222px;
+		text-align: center;
+	}
+	#latest-english div,
+	#latest-hindi div{
+		width: auto;
+		height:100%;
+		display: flex;
+		flex-direction: column;
+	}
+	#latest-english div a,
+	#latest-hindi div a {
+		width: 100%;
+		height: 80%;
+	}
+	#latest-english div a img,
+	#latest-hindi div a img{
+		width: 100%;
+		height: 100%;
+
+	}
+	#latest-hindi div p,
+	#latest-english div p{
+		 color: #fff;
+		 font-family: monospace;
+		 font-style: italic;
+		 font-weight: 300;
+		 font-size: 1.2rem;
+	}
+	/* END FILE FOOTER------------------------------------------------------------------------------------- */
+	#music-bar{
+	height: 100px;
+	width: 1500px;
+	position: fixed;
+	bottom: 0;
+	background-color:  #0ed8c5;
+	opacity: 1;
+	color: black;
+	z-index: 15;
+}
+
+#music-icon{
+	height: 70px;
+	width: 70px;
+	margin-left: 2vw;
+	margin-top: 6px;
+	opacity: 1;
+}
+#music-icon img{
+	height: 70px;
+	width: 70px;
+	margin-left: 0;
+	margin-top: 0;
+	position: fixed;
+}
+#music-bar:target{
+	display: block; 
+}
+#music-icon a{
+	position: fixed;
+	top:12vh;
+	left:98%;
+}
+#music-title{
+	
+	font-family: sans-serif;
+	font-size:1rem;
+	margin-top: -3.5%;
+	margin-left: 7.5%;
+}
+#music-player-title-artist{
+	 color:lightgrey; 
+	 font-size:0.8rem;
+}
+#play-buttons{
+	margin-top: -2%;
+    margin-left: 34%;
+    font-size: 1.3rem;
+}
+#play-buttons i{
+	padding-right: 4%;
+}
+#progress-bar{
+	height:3px;
+	width:380px;
+	margin-left: 460px;
+	margin-top:-1vh;
+	border-radius: 2px;
+}
+#circle{
+	position: relative;
+	top:-6px;
+	left:-1px;
+}
+#favourite{
+	margin-left: 5px;
+	display: inline;
+}
+#remove{
+	margin-left: 5px;
+   display: inline;
+}
+#queue{
+	display: inline;
+	margin-left: 67%;
+	position: relative;
+	bottom: 21%;
+}
+#volume{
+	display: inline;
+	margin-left: 70%;
+	position: relative;
+	bottom: 38%;
+}
+#progress-bar-volume{
+	height:3px;
+	width:10vw;
+	position: fixed;
+	left: 1100px;
+	top:93.5vh;
+	border-radius: 2px;
+	display: inline;
+}
+
+#circle-volume{
+	position: relative;
+	top:-6px;
+	left:0%;
+}
+#start-time{
+	display: inline;
+	position: absolute;
+	font-family: sans-serif;
+	position: relative;
+	left:28%;
+	top:2.5%;
+	font-size: 0.8rem;
+}
+#end-time{
+	display: inline;
+	position: absolute;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	position: relative;
+	left:55%;
+	top:2.5%;
+}
+/* aside section *-------------------------------------------*/
+#aside-header{
+	height: auto;
+	width: 88%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    margin-bottom: 2vh;
+}
+#aside-title{
+	height: auto;
+	width: auto;
+	font-size: 2rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: inline-flex;
+}
+#aside-dropdown{
+	margin-top: 1vh;
+	display: inline-flex;
+}
+#aside-dropdown select{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	border: 0px;
+}
+#aside-dropdown option{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	color: black;
+	border :0px;
+}
+#aside-dropdown select:focus{
+	outline:none;
+}
+#queue-item{
+	height: 100px;
+	width: 320px;
+	background-color: rgb(1, 72, 130,0.5);
+	display: flex;
+	flex-flow:column wrap;
+	margin-top: 1vh;
+	border-radius:5px;
+}
+#queue-item-img{
+	height: 80px;
+	width: 80px;
+	padding: 1%;
+	margin-top: 1.5vh;
+	margin-left: 1vw;
+	background-image: url(image/sunglass.jpg);
+	background-position: center;
+	background-size: cover;
+	color: var(--font_color_1);
+	text-align: center;
+	font-size: 1.3rem;
+	border-radius: 3px;
+}
+#queue-item-title{
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	position: relative;
+	top:5vh;
+}
+#queue-favourite{
+	margin-left: 180px;
+	margin-top: -50px;
+	font-size: 1.2rem;
+}
